@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills & Tools – Chetan Sai Goli</title>
+  <meta name="description"
+    content="Technical skills and proficiency in Python, AI/ML, Cloud (AWS), and development tools." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Chetan<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="skills.html" onclick="toggleMenu()">Skills</a>
+    <a href="projects.html" onclick="toggleMenu()">Projects</a>
+    <a href="education.html" onclick="toggleMenu()">Education</a>
+    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+    <div class="section-header">
+      <div class="section-label">// tech stack</div>
+      <h1 class="section-title">Skills & Tools</h1>
+    </div>
+    <p class="page-hero-desc">
+      My technical toolkit spanning programming, AI/ML frameworks, cloud services, and development tools.
+    </p>
+  </div>
+
+  <!-- SKILLS GRID -->
+  <section id="skills">
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          Programming
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+          AI / ML
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">CNN</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">Keras</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">NumPy</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+          </svg>
+          Cloud (AWS)
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">S3</span>
+          <span class="skill-tag">Lambda</span>
+          <span class="skill-tag">API Gateway</span>
+          <span class="skill-tag">CloudFront</span>
+          <span class="skill-tag">SES</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+          Tools
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Anti Gravity IDE</span>
+          <span class="skill-tag">Git Hub</span>
+          <span class="skill-tag">MS Office</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFICIENCY BARS -->
+  <section class="proficiency-section">
+    <div class="section-header">
+      <div class="section-label">// proficiency</div>
+      <h2 class="section-title">Skill Levels</h2>
+    </div>
+    <div class="proficiency-grid">
+
+      <!-- Programming Languages -->
+      <div class="proficiency-card">
+        <h3 class="skill-group-title" style="margin-bottom: 1.25rem;">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          Programming Languages
+        </h3>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">Python</span>
+            <span class="proficiency-percent">85%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">Java</span>
+            <span class="proficiency-percent">65%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill green" data-width="65"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">SQL</span>
+            <span class="proficiency-percent">70%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill blue" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI / ML Frameworks -->
+      <div class="proficiency-card">
+        <h3 class="skill-group-title" style="margin-bottom: 1.25rem;">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+          AI / ML Frameworks
+        </h3>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">TensorFlow / Keras</span>
+            <span class="proficiency-percent">80%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">OpenCV</span>
+            <span class="proficiency-percent">75%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill pink" data-width="75"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">NumPy</span>
+            <span class="proficiency-percent">80%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill green" data-width="80"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">Deep Learning (CNN)</span>
+            <span class="proficiency-percent">70%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill blue" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & DevOps -->
+      <div class="proficiency-card">
+        <h3 class="skill-group-title" style="margin-bottom: 1.25rem;">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+          </svg>
+          Cloud & DevOps
+        </h3>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">AWS (S3, Lambda, CloudFront)</span>
+            <span class="proficiency-percent">70%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill" data-width="70"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">Git & GitHub</span>
+            <span class="proficiency-percent">75%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill pink" data-width="75"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="proficiency-card">
+        <h3 class="skill-group-title" style="margin-bottom: 1.25rem;">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+          Tools & Platforms
+        </h3>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">VS Code</span>
+            <span class="proficiency-percent">90%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill green" data-width="90"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">Tableau</span>
+            <span class="proficiency-percent">60%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill blue" data-width="60"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="proficiency-header">
+            <span class="proficiency-name">MS Office</span>
+            <span class="proficiency-percent">85%</span>
+          </div>
+          <div class="proficiency-track">
+            <div class="proficiency-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>Designed &amp; Built by <span>Chetan Sai Goli</span> · 2026</footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
