@@ -74,7 +74,7 @@ class Particle {
     if (mouse.x != null) {
       let dx = mouse.x - this.x;
       let dy = mouse.y - this.y;
-      if (dx*dx + dy*dy < mouse.radius * mouse.radius) isNearMouse = true;
+      if (dx * dx + dy * dy < mouse.radius * mouse.radius) isNearMouse = true;
     }
     ctx.fillStyle = isNearMouse ? config.pulseColor : config.baseColor;
     if (isNearMouse) {
@@ -96,27 +96,27 @@ function initParticles() {
 
 function animateParticles() {
   ctx.clearRect(0, 0, width, height);
-  
+
   for (let i = 0; i < particles.length; i++) {
     particles[i].update();
     particles[i].draw();
-    
+
     // Draw connections
     for (let j = i; j < particles.length; j++) {
       let dx = particles[i].x - particles[j].x;
       let dy = particles[i].y - particles[j].y;
       let distance = Math.sqrt(dx * dx + dy * dy);
-      
+
       if (distance < config.connectionDistance) {
         ctx.beginPath();
         let opacity = 1 - (distance / config.connectionDistance);
-        
+
         // Determine line color (stronger near mouse)
         let isNearMouse = false;
         if (mouse.x != null) {
           let mdx1 = mouse.x - particles[i].x;
           let mdy1 = mouse.y - particles[i].y;
-          let mDist1 = Math.sqrt(mdx1*mdx1 + mdy1*mdy1);
+          let mDist1 = Math.sqrt(mdx1 * mdx1 + mdy1 * mdy1);
           if (mDist1 < mouse.radius) isNearMouse = true;
         }
 
@@ -158,7 +158,7 @@ function typeText(element, text, speed, callback) {
   let i = 0;
   element.innerHTML = '<span class="cursor"></span>';
   let cursor = element.querySelector('.cursor');
-  
+
   function type() {
     if (i < text.length) {
       let node = document.createTextNode(text.charAt(i));
@@ -169,7 +169,7 @@ function typeText(element, text, speed, callback) {
       if (callback) callback();
     }
   }
-  
+
   // Start after small delay
   setTimeout(type, 500);
 }
@@ -198,7 +198,7 @@ function handleScroll() {
     const elTop = el.getBoundingClientRect().top;
     if (elTop < viewportHeight * 0.85) {
       el.classList.add('visible');
-      
+
       // Animate stat rings if visible
       if (el.classList.contains('about-stats')) {
         const rings = document.querySelectorAll('.stat-ring-fill');
@@ -291,12 +291,14 @@ function printLine(text, isCommand = false, isHtml = false) {
 const commands = {
   help: `Available commands: 
   <span class="t-synapse">about</span>    - system identity
+  <span class="t-synapse">education</span>- list knowledge
   <span class="t-synapse">skills</span>   - list capabilities
   <span class="t-synapse">sudo</span>     - gain root access
   <span class="t-synapse">clear</span>    - clear terminal
   <span class="t-synapse">exit</span>     - close terminal`,
   about: "Identity: Chetan Sai Goli.<br>Status: ONLINE.<br>Directives: Build AI systems, analyze data, deploy to cloud.",
-  skills: "Python, Java, TensorFlow, Keras, AWS, Git. View UI for full schematic.",
+  education: "Pursuing B.tech with AI&DS Specilzation",
+  skills: "Python, Java, Git, Sql.",
   sudo: "<span class='t-error'>Access Denied. Incident logged.</span> Nice try.",
   exit: "Closing connection..."
 };
@@ -305,7 +307,7 @@ input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     const val = input.value.trim().toLowerCase();
     if (!val) return;
-    
+
     printLine(val, true);
     input.value = '';
 

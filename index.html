@@ -2,442 +2,406 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chetan Sai Goli — SYNAPSE</title>
-  <meta name="description"
-    content="AI & Data Science student building intelligent systems with deep learning, computer vision, and cloud-native technologies." />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetan Sai Goli — SYNAPSE</title>
+    <meta name="description"
+        content="AI & Data Science student building intelligent systems with deep learning, computer vision, and cloud-native technologies." />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- NEURAL CANVAS -->
-  <canvas id="neuralCanvas"></canvas>
+    <!-- NEURAL CANVAS -->
+    <canvas id="neuralCanvas"></canvas>
 
-  <!-- SCAN OVERLAY -->
-  <div class="scan-overlay"></div>
+    <!-- SCAN OVERLAY -->
+    <div class="scan-overlay"></div>
 
-  <!-- NAV -->
-  <nav id="mainNav">
-    <a href="#hero" class="nav-logo">C<span>.</span>S</a>
-    <ul class="nav-links">
-      <li><a href="#hero" data-section="hero">Home</a></li>
-      <li><a href="#about" data-section="about">About</a></li>
-      <li><a href="#skills" data-section="skills">Skills</a></li>
-      <li><a href="#projects" data-section="projects">Projects</a></li>
-      <li><a href="#education" data-section="education">Education</a></li>
-      <li><a href="#contact" data-section="contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburgerBtn">
-      <span></span><span></span><span></span>
+    <!-- NAV -->
+    <nav id="mainNav">
+        <a href="#hero" class="nav-logo">C<span>.</span>S</a>
+        <ul class="nav-links">
+            <li><a href="#hero" data-section="hero">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#skills" data-section="skills">Skills</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li><a href="#education" data-section="education">Experience</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburgerBtn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Experience</a>
+        <a href="#contact">Contact</a>
     </div>
-  </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- ════════════════════════════════════════ -->
-  <!-- HERO — Neural Boot Sequence             -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-content">
-      <div class="hero-status">
-        <span class="status-dot"></span>
-        <span class="status-text">SYSTEM ONLINE — Available for Opportunities</span>
-      </div>
-      <h1 class="hero-name" id="heroName"></h1>
-      <p class="hero-role" id="heroRole"></p>
-      <p class="hero-desc">
-        Building intelligent systems with deep learning, computer vision, and
-        cloud-native technologies. Passionate about turning real-world
-        problems into elegant AI solutions.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">
-          <span>⚡</span> View Experiments
-        </a>
-        <a href="#contact" class="btn-ghost">
-          <span>📡</span> Establish Connection
-        </a>
-      </div>
-      <div class="hero-chips">
-        <span class="hero-chip">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-          chetan142006@gmail.com
-        </span>
-        <span class="hero-chip">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-          </svg>
-          +91 8498893965
-        </span>
-      </div>
-    </div>
-    <div class="scroll-cue">
-      <span>scroll to explore</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════ -->
-  <!-- ABOUT — System Diagnostics              -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="about">
-    <div class="section-tag">// SYSTEM_DIAGNOSTICS</div>
-    <h2 class="section-title reveal">About Me</h2>
-    <div class="about-grid">
-      <div class="about-log reveal">
-        <div class="log-entry">
-          <span class="log-key">IDENTITY:</span>
-          <span class="log-val">Chetan Sai Goli</span>
-        </div>
-        <div class="log-entry">
-          <span class="log-key">DESIGNATION:</span>
-          <span class="log-val">AI & Data Science Undergraduate</span>
-        </div>
-        <div class="log-entry">
-          <span class="log-key">INSTITUTION:</span>
-          <span class="log-val">Lakireddy Bali Reddy College of Engineering</span>
-        </div>
-        <div class="log-entry log-entry--wide">
-          <span class="log-key">MISSION:</span>
-          <span class="log-val">I'm driven by a deep curiosity for how intelligent systems can solve real-world
-            problems. My journey spans from building emotion-aware music recommendation systems using computer vision
-            and deep learning, to deploying serverless cloud architectures on AWS. I thrive at the intersection of AI
-            research and practical engineering.</span>
-        </div>
-        <div class="log-entry">
-          <span class="log-key">CORE_DOMAINS:</span>
-          <span class="log-val log-tags">
-            <span class="domain-tag">🧠 Deep Learning</span>
-            <span class="domain-tag">👁️ Computer Vision</span>
-            <span class="domain-tag">☁️ Cloud-Native</span>
-            <span class="domain-tag">🐍 Python</span>
-            <span class="domain-tag">📊 Data Science</span>
-          </span>
-        </div>
-      </div>
-
-      <div class="about-stats reveal">
-        <div class="stat-ring-row">
-          <div class="stat-ring">
-            <svg viewBox="0 0 120 120">
-              <circle class="stat-ring-bg" cx="60" cy="60" r="52" />
-              <circle class="stat-ring-fill" cx="60" cy="60" r="52" data-percent="73.5" />
-            </svg>
-            <div class="stat-ring-inner">
-              <span class="stat-ring-num">73.5%</span>
-              <span class="stat-ring-label">B.Tech GPA</span>
+    <!-- ════════════════════════════════════════ -->
+    <!-- HERO — Neural Boot Sequence             -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM ONLINE — Available for Opportunities</span>
             </div>
-          </div>
-          <div class="stat-ring">
-            <svg viewBox="0 0 120 120">
-              <circle class="stat-ring-bg" cx="60" cy="60" r="52" />
-              <circle class="stat-ring-fill" cx="60" cy="60" r="52" data-percent="99.6" />
-            </svg>
-            <div class="stat-ring-inner">
-              <span class="stat-ring-num">99.6%</span>
-              <span class="stat-ring-label">SSC Score</span>
+            <h1 class="hero-name" id="heroName">Chetan Sai Goli</h1>
+            <p class="hero-role" id="heroRole">Artificial Intelligence &amp; Data Science Undergraduate</p>
+            <p class="hero-desc">
+                Passionate about Generative AI, AI Engineering, and building practical software solutions. Skilled in
+                Python, data analysis, computer vision fundamentals, and modular software development, with hands-on
+                research experience in scientific computing and computational software.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">
+                    <span>⚡</span> View Experiments
+                </a>
+                <a href="#contact" class="btn-ghost">
+                    <span>📡</span> Establish Connection
+                </a>
             </div>
-          </div>
+            <div class="hero-chips">
+                <span class="hero-chip">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    chetan142006@gmail.com
+                </span>
+                <span class="hero-chip">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                    +91 8498893965
+                </span>
+            </div>
         </div>
-        <div class="stat-counters">
-          <div class="stat-counter">
-            <span class="stat-counter-num">2+</span>
-            <span class="stat-counter-label">Projects Built</span>
-          </div>
-          <div class="stat-counter">
-            <span class="stat-counter-num">4+</span>
-            <span class="stat-counter-label">Certifications</span>
-          </div>
-          <div class="stat-counter">
-            <span class="stat-counter-num">AI&DS</span>
-            <span class="stat-counter-label">Specialisation</span>
-          </div>
+        <div class="scroll-cue">
+            <span>scroll to explore</span>
+            <div class="scroll-arrow"></div>
         </div>
-      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- ABOUT — System Diagnostics              -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="about">
+        <div class="section-tag">// SYSTEM_DIAGNOSTICS</div>
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+            <div class="about-log reveal">
+                <div class="log-entry">
+                    <span class="log-key">IDENTITY:</span>
+                    <span class="log-val">Chetan Sai Goli</span>
+                </div>
+                <div class="log-entry">
+                    <span class="log-key">DESIGNATION:</span>
+                    <span class="log-val">Artificial Intelligence &amp; Data Science Undergraduate</span>
+                </div>
+                <div class="log-entry">
+                    <span class="log-key">INSTITUTION:</span>
+                    <span class="log-val">Lakireddy Bali Reddy College of Engineering</span>
+                </div>
+                <div class="log-entry log-entry--wide">
+                    <span class="log-key">MISSION:</span>
+                    <span class="log-val">Passionate about Generative AI, AI Engineering, and building practical
+                        software solutions. Skilled in Python, data analysis, computer vision fundamentals, and modular
+                        software development, with hands-on research experience in scientific computing and
+                        computational software.</span>
+                </div>
+                <div class="log-entry">
+                    <span class="log-key">CORE_DOMAINS:</span>
+                    <span class="log-val log-tags">
+                        <span class="domain-tag">🧠 Deep Learning</span>
+                        <span class="domain-tag">👁️ Computer Vision</span>
+                        <span class="domain-tag">☁️ Cloud-Native</span>
+                        <span class="domain-tag">🐍 Python</span>
+                        <span class="domain-tag">📊 Data Science</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="about-stats reveal">
+                <div class="stat-ring-row">
+                    <div class="stat-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="stat-ring-bg" cx="60" cy="60" r="52" />
+                            <circle class="stat-ring-fill" cx="60" cy="60" r="52" data-percent="70.5" />
+                        </svg>
+                        <div class="stat-ring-inner">
+                            <span class="stat-ring-num">70.5%</span>
+                            <span class="stat-ring-label">B.Tech GPA</span>
+                        </div>
+                    </div>
+                    <div class="stat-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="stat-ring-bg" cx="60" cy="60" r="52" />
+                            <circle class="stat-ring-fill" cx="60" cy="60" r="52" data-percent="99.6" />
+                        </svg>
+                        <div class="stat-ring-inner">
+                            <span class="stat-ring-num">99.6%</span>
+                            <span class="stat-ring-label">SSC Score</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-counters">
+                    <div class="stat-counter">
+                        <span class="stat-counter-num">2+</span>
+                        <span class="stat-counter-label">Projects Built</span>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="stat-counter-num">4+</span>
+                        <span class="stat-counter-label">Certifications</span>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="stat-counter-num">AI&DS</span>
+                        <span class="stat-counter-label">Specialisation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- SKILLS — Neural Pathways                -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="section-tag">// NEURAL_PATHWAYS</div>
+        <h2 class="section-title reveal">Skills & Tools</h2>
+        <div class="constellation-grid">
+
+            <!-- Programming & DB -->
+            <div class="constellation reveal">
+                <div class="orbit-ring"></div>
+                <div class="constellation-center">
+                    <span class="constellation-icon">&lt;/&gt;</span>
+                    <small>PROGRAMMING &amp; DB</small>
+                </div>
+                <div class="orbit-node" style="--angle: 0deg; --dist: 105px;" data-level="45%">Python</div>
+                <div class="orbit-node" style="--angle: 90deg; --dist: 105px;" data-level="45%">Java</div>
+                <div class="orbit-node" style="--angle: 180deg; --dist: 105px;" data-level="25%">SQL</div>
+            </div>
+
+            <!-- AI & Scientific Computing -->
+            <div class="constellation reveal">
+                <div class="orbit-ring"></div>
+                <div class="constellation-center">
+                    <span class="constellation-icon">🧠</span>
+                    <small>AI &amp; SCIENTIFIC COMPUTING</small>
+                </div>
+                <div class="orbit-node" style="--angle: 0deg;  --dist: 115px;" data-level="50%">NumPy</div>
+                <div class="orbit-node" style="--angle: 60deg;  --dist: 115px;" data-level="50%">Pandas</div>
+                <div class="orbit-node" style="--angle: 120deg; --dist: 115px;" data-level="50%">OpenCV</div>
+                <div class="orbit-node" style="--angle: 180deg; --dist: 115px;" data-level="50%">TensorFlow</div>
+                <div class="orbit-node" style="--angle: 240deg; --dist: 115px;" data-level="50%">Keras</div>
+                <div class="orbit-node" style="--angle: 300deg; --dist: 115px;" data-level="50%">Matplotlib</div>
+            </div>
+
+            <!-- Tools -->
+            <div class="constellation reveal">
+                <div class="orbit-ring"></div>
+                <div class="constellation-center">
+                    <span class="constellation-icon">🛠️</span>
+                    <small>TOOLS</small>
+                </div>
+                <div class="orbit-node" style="--angle: 0deg;   --dist: 105px;" data-level="60%">Git</div>
+                <div class="orbit-node" style="--angle: 72deg;  --dist: 105px;" data-level="35%">GitHub</div>
+                <div class="orbit-node" style="--angle: 144deg; --dist: 105px;" data-level="50%">VS Code</div>
+                <div class="orbit-node" style="--angle: 216deg; --dist: 105px;" data-level="50%">Tableau</div>
+                <div class="orbit-node" style="--angle: 288deg; --dist: 105px;" data-level="50%">Microsoft Office</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- PROJECTS — Experiments Lab              -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="projects">
+        <div class="section-tag">// EXPERIMENTS_LAB</div>
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="lab-grid">
+
+            <article class="lab-panel reveal" style="--accent: #00e5ff;">
+                <div class="lab-num">01</div>
+                <div class="lab-body">
+                    <div class="lab-meta">July 2026</div>
+                    <h3 class="lab-title">OSPI Corner Calculator</h3>
+                    <p class="lab-desc">Developed a prototype application to evaluate photogrammetric quality using
+                        camera geometry and image overlap analysis. Implemented stereo, transition, and convergent
+                        imaging zone classification. Built pixel-wise visibility analysis and convergence-angle
+                        evaluation algorithms. Generated CSV outputs and graphical visualizations.</p>
+                    <div class="lab-tech">
+                        <span>Python</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+                    </div>
+                    <a href="https:/github.com/Chetan142006/OSPI" target="_blank" class="lab-link">
+                        $ view_project <span class="blink">_</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="lab-panel reveal" style="--accent: #7c4dff;">
+                <div class="lab-num">02</div>
+                <div class="lab-body">
+                    <div class="lab-meta">March 2026</div>
+                    <h3 class="lab-title">Emotion-Based Music Recommendation System</h3>
+                    <p class="lab-desc">Developed a real-time facial emotion recognition system to classify emotions
+                        (happy, sad, angry, neutral). Designed and trained a CNN for expression classification.
+                        Integrated an intelligent recommendation engine using detected emotion, user location, and time.
+                        Documented in an IEEE-format research paper.</p>
+                    <div class="lab-tech">
+                        <span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>CNN</span><span>NumPy</span>
+                    </div>
+                    <a href="https://github.com/Chetan142006/VibeCheck-Emotion-Music-Player" target="_blank"
+                        class="lab-link">
+                        $ view_project <span class="blink">_</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- EXPERIENCE & INTERNSHIPS                -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="education">
+        <div class="section-tag">// TRAINING_DATA</div>
+        <h2 class="section-title reveal">Experience &amp; Internships</h2>
+
+        <div class="datastream">
+            <div class="datastream-line"></div>
+
+            <div class="datastream-node reveal">
+                <div class="node-dot">💼</div>
+                <div class="node-content">
+                    <h3>Indian Institute of Technology Guwahati (Civil Engineering Dept.)</h3>
+                    <p>Research Intern</p>
+                    <p>Contributed to computational software for photogrammetric analysis and scientific computing.
+                        Focused on tree mesh generation, parameter analysis, and Python-based tool development.</p>
+                    <div class="node-badges">
+                        <span class="node-badge badge-year">July 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="datastream-node reveal">
+                <div class="node-dot">💼</div>
+                <div class="node-content">
+                    <h3>APSSDC</h3>
+                    <p>Cloud Computing Virtual Intern</p>
+                    <p>Gained practical experience in cloud infrastructure and deployment methodologies.</p>
+                    <div class="node-badges">
+                        <span class="node-badge badge-year">June 2025</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Certification Ticker -->
+        <div class="cert-ticker reveal">
+            <div class="cert-ticker-label">CERTIFICATIONS ▸</div>
+            <div class="cert-ticker-track">
+                <div class="cert-ticker-scroll">
+                    <span class="cert-item">☁️ Oracle Cloud Infrastructure 2025 Generative AI Professional</span>
+                    <span class="cert-item">📊 Data Analytics Job Simulation - Deloitte</span>
+                    <span class="cert-item">🐍 The Joy Of Computing Using Python - NPTEL</span>
+                    <span class="cert-item">☕ Java Basic - HackerRank</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- CONTACT — Establish Connection          -->
+    <!-- ════════════════════════════════════════ -->
+    <section id="contact">
+        <div class="section-tag">// ESTABLISH_CONNECTION</div>
+        <h2 class="section-title reveal">Get In Touch</h2>
+
+        <div class="terminal reveal">
+            <div class="terminal-bar">
+                <div class="terminal-dots">
+                    <span style="background:#ff5f57"></span>
+                    <span style="background:#febc2e"></span>
+                    <span style="background:#28c840"></span>
+                </div>
+            </div>
+            <span class="terminal-title">connection@chetan.synapse</span>
+            <div class="terminal-body">
+                <div class="t-line"><span class="t-prompt">$</span> establishing connection...<span
+                        class="t-ok">[OK]</span>
+                </div>
+                <div class="t-line"><span class="t-prompt">$</span> status: <span class="t-hl">open to
+                        <div class="t-line"><span class="t-prompt">$</span> response_time: <span class="t-hl">~24
+                                hours</span>
+                            opportunities
+                    </span></div>
+            </div>
+            <div class="t-line t-gap"></div>
+            <div class="t-line"><span class="t-comment"># — available channels —</span></div>
+            <a href="mailto:chetan142006@gmail.com" class="t-link">
+                <span class="t-prompt">$</span> mailto <span class="t-arg">chetan142006@gmail.com</span>
+            </a>
+            <a href="tel:+918498893965" class="t-link">
+                <span class="t-prompt">$</span> call <span class="t-arg">+91 8498893965</span>
+            </a>
+            <a href="https://www.linkedin.com/in/chetan1408" target="_blank" class="t-link">
+                <span class="t-prompt">$</span> open <span class="t-arg">linkedin/chetan1408</span>
+            </a>
+            <a href="https://github.com/chetan142006" target="_blank" class="t-link">
+                <span class="t-prompt">$</span> open <span class="t-arg">github/chetan142006</span>
+            </a>
+            <div class="t-line t-gap"></div>
+            <div class="t-line"><span class="t-comment"># — download resume —</span></div>
+            <a href="AlgoHiring.pdf" download class="t-link t-download">
+                <span class="t-prompt">$</span> download <span class="t-arg">resume.pdf</span> <span
+                    class="t-size">[251KB]</span>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-glow"></div>
+        <p>© 2026 <span>CHETAN's Portfolio</span> · Designed & Built by Chetan Sai Goli</p>
+        <p class="footer-hint">Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> for a surprise</p>
+    </footer>
+
+    <!-- EASTER EGG TERMINAL -->
+    <div class="easter-terminal" id="easterTerminal">
+        <div class="terminal-bar">
+            <div class="terminal-dots">
+                <span style="background:#ff5f57"></span>
+                <span style="background:#febc2e"></span>
+                <span style="background:#28c840"></span>
+            </div>
+            <span class="terminal-title">synapse-cli v1.0</span>
+            <button class="easter-close" id="easterClose">×</button>
+        </div>
+        <div class="easter-body" id="easterBody">
+            <div class="t-line"><span class="t-comment"># Welcome to SYNAPSE CLI. Type 'help' for commands.</span></div>
+        </div>
+        <div class="easter-input-row">
+            <span class="t-prompt">$</span>
+            <input type="text" id="easterInput" placeholder="type a command..." autocomplete="off" spellcheck="false" />
+        </div>
     </div>
-  </section>
 
-  <!-- ════════════════════════════════════════ -->
-  <!-- SKILLS — Neural Pathways                -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="skills">
-    <div class="section-tag">// NEURAL_PATHWAYS</div>
-    <h2 class="section-title reveal">Skills & Tools</h2>
-    <div class="constellation-grid">
-
-      <!-- Programming -->
-      <div class="constellation reveal">
-        <div class="orbit-ring"></div>
-        <div class="constellation-center">
-          <span class="constellation-icon">&lt;/&gt;</span>
-          <small>PROGRAMMING</small>
-        </div>
-        <div class="orbit-node" style="--angle: 30deg; --dist: 105px;" data-level="45%">Python</div>
-        <div class="orbit-node" style="--angle: 150deg; --dist: 105px;" data-level="45%">Java</div>
-        <div class="orbit-node" style="--angle: 270deg; --dist: 105px;" data-level="25%">SQL</div>
-      </div>
-
-      <!-- AI / ML -->
-      <div class="constellation reveal">
-        <div class="orbit-ring"></div>
-        <div class="constellation-center">
-          <span class="constellation-icon">🧠</span>
-          <small>AI / ML</small>
-        </div>
-        <div class="orbit-node" style="--angle: 18deg;  --dist: 115px;" data-level="50%">TensorFlow</div>
-        <div class="orbit-node" style="--angle: 90deg;  --dist: 115px;" data-level="50%">Keras</div>
-        <div class="orbit-node" style="--angle: 162deg; --dist: 115px;" data-level="50%">OpenCV</div>
-        <div class="orbit-node" style="--angle: 234deg; --dist: 115px;" data-level="50%">NumPy</div>
-        <div class="orbit-node" style="--angle: 306deg; --dist: 115px;" data-level="50%">CNN</div>
-      </div>
-
-      <!-- Cloud -->
-      <div class="constellation reveal">
-        <div class="orbit-ring"></div>
-        <div class="constellation-center">
-          <span class="constellation-icon">☁️</span>
-          <small>CLOUD</small>
-        </div>
-        <div class="orbit-node" style="--angle: 0deg;   --dist: 105px;" data-level="12%">S3</div>
-        <div class="orbit-node" style="--angle: 72deg;  --dist: 105px;" data-level="12%">Lambda</div>
-        <div class="orbit-node" style="--angle: 144deg; --dist: 105px;" data-level="12%">API GW</div>
-        <div class="orbit-node" style="--angle: 216deg; --dist: 105px;" data-level="12%">CloudFront</div>
-        <div class="orbit-node" style="--angle: 288deg; --dist: 105px;" data-level="12%">GitHub</div>
-      </div>
-
-      <!-- Tools -->
-      <div class="constellation reveal">
-        <div class="orbit-ring"></div>
-        <div class="constellation-center">
-          <span class="constellation-icon">🛠️</span>
-          <small>TOOLS</small>
-        </div>
-        <div class="orbit-node" style="--angle: 30deg;  --dist: 105px;" data-level="60%">AntiGravity</div>
-        <div class="orbit-node" style="--angle: 150deg; --dist: 105px;" data-level="35%">Tableau</div>
-        <div class="orbit-node" style="--angle: 270deg; --dist: 105px;" data-level="50%">MS Office</div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════ -->
-  <!-- PROJECTS — Experiments Lab              -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="projects">
-    <div class="section-tag">// EXPERIMENTS_LAB</div>
-    <h2 class="section-title reveal">Featured Projects</h2>
-    <div class="lab-grid">
-
-      <article class="lab-panel reveal" style="--accent: #00e5ff;">
-        <div class="lab-num">01</div>
-        <div class="lab-body">
-          <div class="lab-meta">March 2026</div>
-          <h3 class="lab-title">Emotion-Based Music Recommendation System</h3>
-          <p class="lab-desc">An AI-driven system that detects real-time facial emotions using computer vision and deep
-            learning, then dynamically recommends music playlists based on detected mood, location, and time of day.
-            Documented as an IEEE-style conference paper.</p>
-          <div class="lab-tech">
-            <span>Python</span><span>OpenCV</span><span>CNN</span><span>TensorFlow</span><span>Keras</span><span>NumPy</span>
-          </div>
-          <a href="https://github.com/Chetan142006/VibeCheck-Emotion-Music-Player" target="_blank" class="lab-link">
-            $ view_project <span class="blink">_</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="lab-panel reveal" style="--accent: #7c4dff;">
-        <div class="lab-num">02</div>
-        <div class="lab-body">
-          <div class="lab-meta">Jun 2025</div>
-          <h3 class="lab-title">Cloud-Powered Personal Portfolio</h3>
-          <p class="lab-desc">A scalable, serverless web application on AWS showcasing professional skills and projects.
-            Uses CloudFront CDN for global performance, and Lambda + API Gateway for dynamic contact form processing —
-            no
-            servers to manage.</p>
-          <div class="lab-tech">
-            <span>AWS S3</span><span>CloudFront</span><span>Lambda</span><span>API Gateway</span><span>SES</span>
-          </div>
-          <a href="https://github.com/Chetan142006/Cloud-Powered-Personal-Portfolio" target="_blank" class="lab-link">
-            $ view_project <span class="blink">_</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="lab-panel reveal" style="--accent: #00e676;">
-        <div class="lab-num">03</div>
-        <div class="lab-body">
-          <div class="lab-meta">Sept 2025</div>
-          <h3 class="lab-title">Personal Blog Website Development</h3>
-          <p class="lab-desc">A responsive front-end website built for a client to host articles and media. Created a
-            professional blog interface using HTML and CSS with responsive design across desktop and mobile. Implemented
-            client-side scripting with JavaScript for improved interactivity.</p>
-          <div class="lab-tech">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
-          </div>
-          <a href="https://chetan142006.github.io/FSD1-Project---Blogspot-/" target="_blank" class="lab-link">
-            $ view_project <span class="blink">_</span>
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════ -->
-  <!-- EDUCATION — Training Data               -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="education">
-    <div class="section-tag">// TRAINING_DATA</div>
-    <h2 class="section-title reveal">Education & Credentials</h2>
-
-    <div class="datastream">
-      <div class="datastream-line"></div>
-
-      <div class="datastream-node reveal">
-        <div class="node-dot">🎓</div>
-        <div class="node-content">
-          <h3>Lakireddy Bali Reddy College of Engineering</h3>
-          <p>B.Tech — Artificial Intelligence &amp; Data Science</p>
-          <div class="node-badges">
-            <span class="node-badge badge-score">73.5% · Pursuing</span>
-            <span class="node-badge badge-year">2023 – Present</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="datastream-node reveal">
-        <div class="node-dot">📗</div>
-        <div class="node-content">
-          <h3>Narayana Junior College</h3>
-          <p>Intermediate (MPC)</p>
-          <div class="node-badges">
-            <span class="node-badge badge-score">93.6%</span>
-            <span class="node-badge badge-year">2023</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="datastream-node reveal">
-        <div class="node-dot">📘</div>
-        <div class="node-content">
-          <h3>Bhashyam EM High School</h3>
-          <p>SSC (Class X)</p>
-          <div class="node-badges">
-            <span class="node-badge badge-score">99.6%</span>
-            <span class="node-badge badge-year">2021</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Certification Ticker -->
-    <div class="cert-ticker reveal">
-      <div class="cert-ticker-label">CERTIFICATIONS ▸</div>
-      <div class="cert-ticker-track">
-        <div class="cert-ticker-scroll">
-          <span class="cert-item">📊 Data Analytics Job Simulation — Deloitte</span>
-          <span class="cert-item">☁️ OCI 2025 Generative AI Professional — Oracle</span>
-          <span class="cert-item">🐍 The Joy of Computing using Python — NPTEL</span>
-          <span class="cert-item">☕ Java Basic — HackerRank</span>
-          <span class="cert-item">📊 Data Analytics Job Simulation — Deloitte</span>
-          <span class="cert-item">☁️ OCI 2025 Generative AI Professional — Oracle</span>
-          <span class="cert-item">🐍 The Joy of Computing using Python — NPTEL</span>
-          <span class="cert-item">☕ Java Basic — HackerRank</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════ -->
-  <!-- CONTACT — Establish Connection          -->
-  <!-- ════════════════════════════════════════ -->
-  <section id="contact">
-    <div class="section-tag">// ESTABLISH_CONNECTION</div>
-    <h2 class="section-title reveal">Get In Touch</h2>
-
-    <div class="terminal reveal">
-      <div class="terminal-bar">
-        <div class="terminal-dots">
-          <span style="background:#ff5f57"></span>
-          <span style="background:#febc2e"></span>
-          <span style="background:#28c840"></span>
-        </div>
-        <span class="terminal-title">connection@chetan.synapse</span>
-      </div>
-      <div class="terminal-body">
-        <div class="t-line"><span class="t-prompt">$</span> establishing connection...<span class="t-ok">[OK]</span>
-        </div>
-        <div class="t-line"><span class="t-prompt">$</span> status: <span class="t-hl">open to
-            opportunities</span></div>
-        <div class="t-line"><span class="t-prompt">$</span> response_time: <span class="t-hl">~24 hours</span></div>
-        <div class="t-line t-gap"></div>
-        <div class="t-line"><span class="t-comment"># — available channels —</span></div>
-        <a href="mailto:chetan142006@gmail.com" class="t-link">
-          <span class="t-prompt">$</span> mailto <span class="t-arg">chetan142006@gmail.com</span>
-        </a>
-        <a href="tel:+918498893965" class="t-link">
-          <span class="t-prompt">$</span> call <span class="t-arg">+91 8498893965</span>
-        </a>
-        <a href="https://www.linkedin.com/in/chetan1408" target="_blank" class="t-link">
-          <span class="t-prompt">$</span> open <span class="t-arg">linkedin/chetan1408</span>
-        </a>
-        <a href="https://github.com/chetan142006" target="_blank" class="t-link">
-          <span class="t-prompt">$</span> open <span class="t-arg">github/chetan142006</span>
-        </a>
-        <div class="t-line t-gap"></div>
-        <div class="t-line"><span class="t-comment"># — download resume —</span></div>
-        <a href="CTS  Web Dev Drive Resume.pdf" download class="t-link t-download">
-          <span class="t-prompt">$</span> download <span class="t-arg">resume.pdf</span> <span
-            class="t-size">[243KB]</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-glow"></div>
-    <p>© 2026 <span>CHETAN's Portfolio</span> · Designed & Built by Chetan Sai Goli</p>
-    <p class="footer-hint">Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> for a surprise</p>
-  </footer>
-
-  <!-- EASTER EGG TERMINAL -->
-  <div class="easter-terminal" id="easterTerminal">
-    <div class="terminal-bar">
-      <div class="terminal-dots">
-        <span style="background:#ff5f57"></span>
-        <span style="background:#febc2e"></span>
-        <span style="background:#28c840"></span>
-      </div>
-      <span class="terminal-title">synapse-cli v1.0</span>
-      <button class="easter-close" id="easterClose">×</button>
-    </div>
-    <div class="easter-body" id="easterBody">
-      <div class="t-line"><span class="t-comment"># Welcome to SYNAPSE CLI. Type 'help' for commands.</span></div>
-    </div>
-    <div class="easter-input-row">
-      <span class="t-prompt">$</span>
-      <input type="text" id="easterInput" placeholder="type a command..." autocomplete="off" spellcheck="false" />
-    </div>
-  </div>
-
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
